@@ -39,6 +39,7 @@ export default {
 </script>
 <style lang="sass">
 .my-card
-  width: 100%
-  max-width: 250px
+  width: 350px
+  max-width: 100%
+  padding: 0px
 </style>

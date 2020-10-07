@@ -2,11 +2,10 @@
 <div>
     <input type="text" placeholder="Movie name" v-model="UsrInName">
     <button v-on:click=AddMovie()>button</button>
-<ul>
-    <li v-for="(item) in movielist" :key="item">
-        <card />
-    </li>
-</ul>
+    <div class="moviecard">
+    <card v-for="(item) in movielist" :key="item">
+    </card>
+    </div>
 </div>
 </template>
 
@@ -25,3 +24,12 @@ export default {
 }
 </script>
 
+<style lang="sass">
+.moviecard
+    display: flex
+    justify-content: center
+    flex-direction: row
+    align-content: flex-start
+    align-self: flex-auto
+
+</style>
