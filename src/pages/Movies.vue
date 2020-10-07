@@ -19,7 +19,11 @@ export default {
             movielist: ["Wall-e","Simpsonovi"]
         }
     },
-
+    methods: {
+        AddMovie() {
+            this.movielist.push(this.UsrInName)
+        }
+    }
     
 }
 </script>
