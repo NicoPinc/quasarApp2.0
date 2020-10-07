@@ -36,6 +36,7 @@ export default {
     display: flex
     justify-content: center
     flex-direction: row
+    flex-wrap: wrap
     align-content: flex-start
     align-self: flex-auto
 .inputMovies
