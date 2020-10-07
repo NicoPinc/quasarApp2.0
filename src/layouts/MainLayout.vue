@@ -75,10 +75,10 @@ const linksData = [
     to: '/warning'
   },
   {
-    title: 'Twitter',
-    caption: '@quasarframework',
+    title: 'Cus Svete',
+    caption: 'Mondays hello world project',
     icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    to: '/HelloWorld'
   },
   {
     title: 'Facebook',
