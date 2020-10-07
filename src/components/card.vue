@@ -11,7 +11,7 @@
       </q-img>
 
       <q-card-section>
-        {{ lorem }}
+        {{ item }}
       </q-card-section>
     </q-card>
 </div>
@@ -41,5 +41,5 @@ export default {
 .my-card
   width: 350px
   max-width: 100%
-  padding: 0px
+  
 </style>

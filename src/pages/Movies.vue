@@ -1,7 +1,10 @@
 <template>
 <div>
-    <input type="text" placeholder="Movie name" v-model="UsrInName">
-    <button v-on:click=AddMovie()>button</button>
+    <div class="inputMovies">
+    Wanna add Movie ? <br>
+    <input type="text" placeholder="Enter movie name" v-model="UsrInName">
+    <button class="movieButt" v-on:click=AddMovie()>button</button>
+    </div>
     <div class="moviecard">
     <card v-for="(item) in movielist" :key="item">
     </card>
@@ -35,5 +38,9 @@ export default {
     flex-direction: row
     align-content: flex-start
     align-self: flex-auto
-
+.inputMovies
+    text-align: center
+    padding: 10px
+.movieButt
+    margin-left: 15px
 </style>
