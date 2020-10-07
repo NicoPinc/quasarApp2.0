@@ -28,7 +28,13 @@ const routes = [
       { path: 'warning', component: () => import('pages/warning.vue') }
     ]
   },
-
+  {
+    path: '/',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: 'helloWorld', component: () => import('pages/HelloWorld.vue') }
+    ]
+  },
   // Always leave this as last one,
   // but you can also remove it
   {
