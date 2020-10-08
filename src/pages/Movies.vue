@@ -1,13 +1,13 @@
 <template>
 <div>
     <div class="inputMovies">
-    Wanna add Movie ? {{ item }} <br>
+    Wanna add Movie ? <br>
     <input type="text" placeholder="Enter movie name" v-model="UsrInName">
+    <input type="text" placeholder="Movie Description" v-model="UsrInDescr" >
     <button class="movieButt" v-on:click=AddMovie()>button</button>
     </div>
     <div class="moviecard">
-        
-    <card v-for="(item) in movielist" :key="item" v-bind:item="item">
+    <card v-for="item in movielist" :key="item.movielist" v-bind:movielist="item">
     </card>
     </div>
 </div>
@@ -15,17 +15,22 @@
 
 <script>
 import card from 'components/card.vue'
+
 export default {
+    name: 'Movies',
     components: { card },
     data(){
         return{
+            UsrInDescr: "",
             UsrInName: "",
-            movielist: ["Wall-e","Simpsonovi"]
+            movielist: []
         }
     },
     methods: {
         AddMovie() {
-            this.movielist.push(this.UsrInName)
+            console.log(this.UsrInName),
+            this.movielist.push({movieName: this.UsrInName, movieDescr: this.UsrInDescr})
+
         }
     }
     
