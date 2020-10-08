@@ -6,12 +6,12 @@
         basic
       >
         <div class="absolute-bottom text-h6">
-            {{item}}
+            {{movielist.movieName}}
         </div>
       </q-img>
 
       <q-card-section>
-        {{ item }}
+        {{ movielist.movieDescr }}
       </q-card-section>
     </q-card>
 </div>
@@ -21,10 +21,16 @@
 export default {
     name: 'card',
     props: {
-      item: {
-        type: String,
-        default: ""
-      },
+      movielist: {
+        movieName: {
+          type: String,
+          required: true
+        },
+        movieDescr: {
+          type: String,
+          default: ''
+        }
+      }
     }
 }
 </script>
