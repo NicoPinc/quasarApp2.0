@@ -21,19 +21,10 @@
 export default {
     name: 'card',
     props: {
-        title: {
-            type: String,
-            required: true
-        },
-        description: {
-            type: String,
-            default: '',
-        },
-        to: {
-            type: String,
-            default: '#'
-        },
-
+      item: {
+        type: String,
+        default: ""
+      },
     }
 }
 </script>

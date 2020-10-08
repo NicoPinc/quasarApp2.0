@@ -15,7 +15,7 @@
       </li>
     </ol>
       <input id="input" type="text" placeholder="add item" v-model="usrinput" >
-      <button v-on:click=AddMovie()>button</button> <br><br><br><br><br>
+      <button v-on:click=AddMovie()>button</button> <br>
       {{reversed}} <br><br> 
       <button v-on:click=DeleteLast()>DELETE last one</button>
   </div>
